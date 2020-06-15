@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.less'
 
 // 导入 MUI 的样式
 import './lib/mui/css/mui.min.less'
