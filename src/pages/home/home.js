@@ -7,44 +7,34 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <h4 style={{paddingBottom: 10}}> 选择套餐</h4>
+
                 <LogoTitle></LogoTitle>
 
                 <ul className="mui-table-view mui-grid-view mui-grid-9">
-                    <li className="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                        <span className="mui-icon mui-icon-home"></span>
-                        <div className="mui-media-body">Home</div>
+                    <li className="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6"><a href="#">
+                        <img src={require('../../images/1.jpg')} alt=""/>
                     </a></li>
-                    <li className="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                        <span className="mui-icon mui-icon-email"><span className="mui-badge">5</span></span>
-                        <div className="mui-media-body">Email</div>
-                    </a></li>
-                    <li className="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                        <span className="mui-icon mui-icon-chatbubble"></span>
-                        <div className="mui-media-body">Chat</div>
-                    </a></li>
-                    <li className="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                        <span className="mui-icon mui-icon-location"></span>
-                        <div className="mui-media-body">location</div>
-                    </a></li>
-                    <li className="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                        <span className="mui-icon mui-icon-search"></span>
-                        <div className="mui-media-body">Search</div>
-                    </a></li>
-                    <li className="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                        <span className="mui-icon mui-icon-phone"></span>
-                        <div className="mui-media-body">Phone</div>
-                    </a></li>
-                    <li className="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                        <span className="mui-icon mui-icon-gear"></span>
-                        <div className="mui-media-body">Setting</div>
-                    </a></li>
-                    <li className="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                        <span className="mui-icon mui-icon-info"></span>
-                        <div className="mui-media-body">about</div>
-                    </a></li>
-                    <li className="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-                        <span className="mui-icon mui-icon-more"></span>
-                        <div className="mui-media-body">more</div>
+                    <li className="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+                        <a href="#">
+                            <img src={require('../../images/2.jpg')} alt=""/>
+                        </a>
+                        <a href="#">
+                            <img src={require('../../images/5.jpg')} alt=""/>
+                        </a>
+                    </li>
+                    <li className="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
+                        <a href="#">
+                            <img src={require('../../images/4.jpg')} alt=""/>
+                        </a>
+                        <a href="#">
+                            <img src={require('../../images/3.jpg')} alt=""/>
+                        </a>
+                    </li>
+
+
+                    <li className="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6"><a href="#">
+                        <img src={require('../../images/6.jpg')} alt=""/>
                     </a></li>
                 </ul>
             </div>
