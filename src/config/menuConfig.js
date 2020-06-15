@@ -2,7 +2,7 @@
 const menuList = [
     {
         title: '选择套餐',
-        key: '/home'
+        key: '/home',
     },
     {
         title: '套餐列表',
@@ -12,6 +12,11 @@ const menuList = [
                 title: '套餐列表',
                 key: '/taocan/special',
             },
+            {
+                title: '套餐详情',
+                key: '/taocan/taocanInfo',
+                hideIcon:true
+            }
         ]
     },/*
     {

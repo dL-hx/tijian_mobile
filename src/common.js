@@ -20,22 +20,30 @@ class Common extends Component {
         });
         const menuName = obj;
 
-        let title = ''
+        let config ={}
         for (let i = 0; i < menuName.length; i++) {
             const item = menuName[i]
             if (currentKey == item.key) {
-                title = item.title
+                config.title = item.title
+                config.hideIcon = item.hideIcon
             }
         }
 
-        return title
+        return {
+            title:config.title,
+            hideIcon:config.hideIcon,
+        }
     };
 
 
     render() {
+        const config = this.handleMenUpdate(MenuConfig)
+        const hideIcon = false||config.hideIcon // default don't hideIcon
         return (
             <div className='container'>
-                <LogoTitle title={this.handleMenUpdate(MenuConfig)}></LogoTitle>
+                {
+                    hideIcon?"":<LogoTitle title={config.title}></LogoTitle>
+                }
                 <div>
                     {this.props.children}
                 </div>

@@ -10,6 +10,7 @@ import About from "./pages/about/about";
 
 import Special from "./pages/taocan/special";
 import Common from "./common";
+import TaocanInfo from "./pages/taocan/taocanInfo";
 
 export default class IRouter extends React.Component {
     render() {
@@ -22,6 +23,7 @@ export default class IRouter extends React.Component {
                             <Route path="/taocan" render={() => {
                                 return <div>
                                     <Route path="/taocan/special" component={Special}/>
+                                    <Route path="/taocan/taocanInfo" component={TaocanInfo}/>
                                 </div>;
                             }}
                             />
