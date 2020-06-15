@@ -10,7 +10,6 @@ class LogoTitle extends Component {
         return (
             <div>
                 <h4 style={{paddingBottom: 10}}> {title}</h4>
-
                 <p className='logo-title'>
                     {showIcon&&<img src={defaultSetting.logo}/>}
                     {subtitle}

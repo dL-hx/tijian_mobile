@@ -8,14 +8,28 @@ import Home from "./pages/home/home"; //4.0允许在路由中嵌套标签组件 
 */
 import About from "./pages/about/about";
 
+import Special from "./pages/taocan/special";
+import Common from "./common";
+
 export default class IRouter extends React.Component {
     render() {
         return (
             <Router>
                 <App>
                     <Switch>
-                        <Route path="/home" component={Home} />
+                        <Common>
+                            <Route path="/home" component={Home}/>
+                            <Route path="/taocan" render={() => {
+                                return <div>
+                                    <Route path="/taocan/special" component={Special}/>
+                                </div>;
+                            }}
+                            />
+                        </Common>
                         <Route path="/about" component={About} />
+
+
+
                         {/*<Route path="/topics" component={Topic} />*/}
 
                         <Redirect to="/home"/>

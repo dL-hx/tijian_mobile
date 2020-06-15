@@ -1,39 +1,37 @@
 import React, {Component} from 'react';
 import './home.less'
 import {NavBar} from "antd-mobile";
-import LogoTitle from "../../common/LogoTitle";
+import { Link } from 'react-router-dom'
 
 class Home extends Component {
     render() {
         return (
             <div>
-                <LogoTitle title='选择套餐'></LogoTitle>
-
                 <ul className="mui-table-view mui-grid-view mui-grid-9">
-                    <li className="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6"><a href="#">
+                    <li className="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6"><Link  to="/taocan/special">
                         <img src={require('../../images/1.jpg')} alt=""/>
-                    </a></li>
+                    </Link ></li>
                     <li className="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
-                        <a href="#">
+                        <Link to="/taocan/special">
                             <img src={require('../../images/2.jpg')} alt=""/>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="/taocan/special">
                             <img src={require('../../images/5.jpg')} alt=""/>
-                        </a>
+                        </Link>
                     </li>
                     <li className="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6">
-                        <a href="#">
+                        <Link to="/taocan/special">
                             <img src={require('../../images/4.jpg')} alt=""/>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="/taocan/special">
                             <img src={require('../../images/3.jpg')} alt=""/>
-                        </a>
+                        </Link>
                     </li>
 
 
-                    <li className="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6"><a href="#">
+                    <li className="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6"><Link to="/taocan/special">
                         <img src={require('../../images/6.jpg')} alt=""/>
-                    </a></li>
+                    </Link></li>
                 </ul>
             </div>
         );
