@@ -7,9 +7,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h4 style={{paddingBottom: 10}}> 选择套餐</h4>
-
-                <LogoTitle></LogoTitle>
+                <LogoTitle title='选择套餐'></LogoTitle>
 
                 <ul className="mui-table-view mui-grid-view mui-grid-9">
                     <li className="mui-table-view-cell mui-media mui-col-xs-6 mui-col-sm-6"><a href="#">
