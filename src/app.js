@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {NavBar, Icon} from 'antd-mobile';
 import './App.less';
-import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router';
 import defaultSetting from './defaultSetting'
 
 class App extends Component {
