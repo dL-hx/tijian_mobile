@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {NavBar, Icon} from 'antd-mobile';
 import './App.less';
 import { withRouter } from 'react-router-dom';
-
+import defaultSetting from './defaultSetting'
 
 class App extends Component {
 
@@ -16,7 +16,7 @@ class App extends Component {
                         onLeftClick={() => this.props.history.goBack()}
                     // rightContent={<b onClick={() => this.setState({ open: true })}>...</b>}
                 >
-                    和美佑家
+                    {defaultSetting.title}
                 </NavBar>
 
                 <div className='main'>

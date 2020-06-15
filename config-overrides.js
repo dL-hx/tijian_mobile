@@ -8,7 +8,7 @@ module.exports = function override(config, env) {
   // babel-plugin-import
   config = injectBabelPlugin(['import', {
     libraryName: 'antd-mobile',
-    //style: 'css',
+    //  style: 'css',
     style: true, // use less for customized theme
   }], config);
 
@@ -88,6 +88,7 @@ module.exports = function override(config, env) {
       ]
     }
   );
+
 
   // file-loader exclude
   let l = getLoader(config.module.rules, fileLoaderMatcher);
