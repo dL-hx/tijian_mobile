@@ -9,7 +9,7 @@ const CheckboxItem = Checkbox.CheckboxItem;
 
 const curKey = 'id'
 
-class Shopcart extends Component {
+class ShopCart extends Component {
 
     state = {
         totalPrice:'0.00',
@@ -140,4 +140,4 @@ class Shopcart extends Component {
     }
 }
 
-export default Shopcart;
+export default ShopCart;

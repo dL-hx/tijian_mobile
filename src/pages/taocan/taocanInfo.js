@@ -4,7 +4,7 @@ import styles from './taocanInfo.css'
 import {Button} from 'antd-mobile';
 import {Link} from "react-router-dom";
 
-class TaocanInfo extends Component {
+class TaoCanInfo extends Component {
     state = {
         active: false,
     }
@@ -89,4 +89,4 @@ class TaocanInfo extends Component {
     }
 }
 
-export default TaocanInfo;
+export default TaoCanInfo;
