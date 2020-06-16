@@ -11,7 +11,7 @@ class Common extends Component {
     handleMenUpdate = (data) => {
         let currentKey = this.props.location.pathname
         let obj = []; //创建数组,将需要的数据放入其中,代码无形中使用了工厂模式👍,将需要值进行了处理
-        data.map(item => {
+        data.forEach(item => {
             if (item.children) {// 如果有children属性,将其展开放入数组中
                 obj.push(...item.children);
             } else {
@@ -23,7 +23,7 @@ class Common extends Component {
         let config ={}
         for (let i = 0; i < menuName.length; i++) {
             const item = menuName[i]
-            if (currentKey == item.key) {
+            if (currentKey === item.key) {
                 config.title = item.title
                 config.hideIcon = item.hideIcon
             }

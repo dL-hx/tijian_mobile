@@ -15,7 +15,8 @@ const menuList = [
             {
                 title: '套餐详情',
                 key: '/taocan/taocanInfo',
-                hideIcon:true
+                hideIcon:true,
+                hidePadding:true
             }
         ]
     },/*

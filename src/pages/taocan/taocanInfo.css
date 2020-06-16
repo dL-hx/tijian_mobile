@@ -1,0 +1,98 @@
+.lunbo {
+    height: 345px
+}
+
+.lunbo img {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+}
+
+
+.info .navtitle, .info .thdtitle {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+/*折扣样式*/
+.info s1 {
+    font-size: 18px;
+}
+
+.info .subtitle {
+    padding: 12px;
+    display: flex;
+    align-items: baseline;
+    color: #666;
+}
+
+
+.info .subtitle h3 {
+    color: #ff0024;
+}
+
+.info h5 {
+    margin: 0 5px;
+    text-decoration: line-through;
+}
+
+/*这个代表你要在几行显示省略号*/
+.info .thdtitle {
+    /*border: 1px solid #ccc;*/
+    height: 60px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.info .thd-l {
+    width: 80%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.info .thd-r {
+
+}
+
+
+.info .thd-r a {
+    color: #666;
+}
+
+
+.info .fthtitle {
+    /*border: 1px solid #ccc;*/
+    height: 60px;
+    padding: 12px;
+
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.info .fthtitle span:nth-child(1) {
+    width: 80px;
+    color: #666;
+}
+
+.info .fthtitle span:nth-child(2) {
+    margin-right: 20px;
+}
+
+
+
