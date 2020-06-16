@@ -27,21 +27,6 @@ class Shopcart extends Component {
     }
 
     getTotalPrice() {
-        // 1、
-        // let totalPrice = 0
-        // for (let i = 0; i < this.books.length; i++) {
-        //     totalPrice +=this.books[i].price * this.books[i].count
-        // }
-        // return totalPrice
-
-        // 2、
-        // let totalPrice = 0;
-        // for (let i in this.books) {
-        //     totalPrice += this.books[i].price * this.books[i].count
-        // }
-        // return totalPrice
-
-        // 3、
       const ids= this.state.ids
         const goods= this.state.goods
 
