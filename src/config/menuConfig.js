@@ -17,7 +17,11 @@ const menuList = [
                 key: '/taocan/taocanInfo',
                 hideIcon:true,
                 hidePadding:true
-            }
+            },
+            {
+                title: '购物车',
+                key: '/taocan/shopcart',
+            },
         ]
     },/*
     {

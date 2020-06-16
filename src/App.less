@@ -1,3 +1,9 @@
+@import "./style/utils";
+
+* {
+  touch-action: pan-y;
+}
+
 html, body {
   height: 100%;
 }
@@ -17,10 +23,13 @@ body {
   position: absolute; top: 0; bottom: 0; left: 0; right: 0;
   overflow: scroll;
 }
+
+
+
 .fixed-bottom {
   position: fixed; bottom: 0; left: 0;
   width: 100%; height: 60px;
-  background-color: #ddd;
+  //background-color: #ddd;
 }
 hr {
   margin: 70px 10px;
@@ -38,3 +47,7 @@ hr {
   justify-content: flex-start;
 }
 
+
+.am-list-item {
+  padding-left: 0px!important;
+}

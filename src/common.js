@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import './style/common.css'
+import styles from './style/common.css'
 import LogoTitle from "./components/LogoTitle";
 import {withRouter} from "react-router";
 
 import MenuConfig from './config/menuConfig'
+import {Link} from "react-router-dom";
 
 class Common extends Component {
 
@@ -40,9 +41,11 @@ class Common extends Component {
         const config = this.handleMenUpdate(MenuConfig)
         const hideIcon = false||config.hideIcon // default don't hideIcon
         return (
-            <div className='container'>
+            <div className={styles.container}>
                 {
-                    hideIcon?"":<LogoTitle title={config.title}></LogoTitle>
+                    hideIcon?"":<Link to='/home' style={{color:'#000'}}>
+                        <LogoTitle title={config.title}></LogoTitle>
+                    </Link>
                 }
                 <div>
                     {this.props.children}

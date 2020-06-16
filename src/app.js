@@ -51,7 +51,7 @@ class App extends Component {
                     {defaultSetting.title}
                 </NavBar>
 
-                <div className='main' style={{padding:`${hidePadding?0:20}`}}>
+                <div className='main' style={{padding:`${hidePadding?0:'20px'}`}}>
                     {this.props.children}
                 </div>
             </div>
