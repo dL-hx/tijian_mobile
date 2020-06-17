@@ -43,7 +43,7 @@ class Order extends Component {
                 console.log(values)
 
             }else {
-                Toast.fail('输入有误，请检查输入无误后再提交',1);
+                Toast.fail('输入有误，请检查输入无误后再提交');
             }
         });
     }
