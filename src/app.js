@@ -39,7 +39,7 @@ class App extends Component {
     };
 
     render() {
-        const flag = this.props.location.pathname === "/home" ? false : true;
+        const flag = this.props.location.pathname === "/" ||this.props.location.pathname === "/home" ? false : true;
 
         const config = this.handleMenUpdate(MenuConfig)
         const hidePadding = false || config.hidePadding // default don't hidePadding
@@ -50,7 +50,7 @@ class App extends Component {
                 <NavBar mode="light"
                         icon={flag && <Icon type="left"/>}
                         onLeftClick={() => this.props.history.goBack()}
-                    // rightContent={<b onClick={() => this.setState({ open: true })}>...</b>}
+                        rightContent={<b onClick={() => {this.props.history.push('/');}}>...</b>}
                 >
                     {/*{defaultSetting.title}*/}
                     {config.title}

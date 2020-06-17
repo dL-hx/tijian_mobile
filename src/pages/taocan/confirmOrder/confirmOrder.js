@@ -3,13 +3,19 @@ import {Link} from "react-router-dom";
 import {Button} from "antd-mobile";
 import {yuan} from "../../../defaultSetting";
 import './confirmOrder.less'
+import request from "../../../utils/request";
+import utils from "../../../utils/utils";
 
 class ConfirmOrder extends Component {
 
-    handleClick=()=>{
+    handleClick= async () => {
         const inputText = this.refs.input.value
 
-        console.log(inputText)
+        const api = await utils.getWxCode()
+        console.log(api.code)
+        const res = await request('/abc', {a: inputText}, 'GET')
+
+        console.log('res', res)
     }
 
     render() {
@@ -58,6 +64,17 @@ class ConfirmOrder extends Component {
                 </div>
 
 
+                <div style={{ background: '#fff', margin:'10px 0'}}>
+                    <div className="mui-input-row mui-radio radio-view">
+                        <label>
+                            <img src={require('../../../images/wx.png')} alt=""/>
+                            微信支付
+                        </label>
+
+                        <input name="radio1" type="radio" checked/>
+                    </div>
+                </div>
+
                 <div className="fixed-bottom">
                     <div style={{
                         width: '60%',
@@ -66,7 +83,7 @@ class ConfirmOrder extends Component {
                     }}>
                         <div className='sub'>
                             <span style={{paddingRight: 20}}>总计:</span>
-                            <span className='yuan'>{yuan} {0}</span>
+                            <span className='yuan'>{yuan} {'0.00'}</span>
                         </div>
                     </div>
 

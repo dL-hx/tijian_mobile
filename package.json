@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "antd-mobile": "^2.0.0",
+    "axios": "^0.19.2",
+    "moment": "^2.26.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^5.2.0",
@@ -16,10 +18,12 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "antd-mobile-demo-data": "^0.3.0",
     "babel-plugin-import": "^1.2.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "prop-types": "^15.7.2",
+    "rc-form": "^2.4.11",
     "react-app-rewired": "^1.2.9",
     "react-router": "^5.2.0"
   }

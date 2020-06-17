@@ -33,7 +33,7 @@ class ShopCart extends Component {
         let totalPrice = 0
         for (let key of ids) {
             for (let item of goods){
-                if (item[curKey]==key){
+                if (item[curKey]===key){
                     totalPrice += item.price
                 }
             }

@@ -1,4 +1,18 @@
+import index from './getWxCode.js';
+import moment from 'moment';
+
 export default {
+
+    /**
+     * moment 转 日期字符串
+     * @param text
+     * @param format
+     * @returns {string} 日期字符串
+     */
+    formatTime:function(text, format='YYYY-MM-DD') {
+        return moment(text).format(format);
+    },
+
     /**
      获取数组对象中某一属性值的集合
 
@@ -45,6 +59,26 @@ export default {
             return item[attr];
         });
         return arr;
+    },
+
+    /**
+     * 获取wx Code
+     async getWxCode() {
+        const res = await api.login()
+        console.log(res.code)
+    }
+     */
+
+    getWxCode: function () {
+        return new Promise((resolve, reject) => {
+            index.login(res => {
+                if (res.code) {
+                    resolve(res);
+                } else {
+                    reject(res);
+                }
+            })
+        });
     }
 }
 

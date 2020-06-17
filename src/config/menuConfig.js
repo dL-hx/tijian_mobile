@@ -5,6 +5,10 @@ const _light = defaultSetting.backgroundColor
 // src/config/menuConfig.js
 const menuList = [
     {
+        title: '导航页',
+        key: '/',
+    },
+    {
         title: '选择套餐',
         key: '/home',
     },
@@ -19,8 +23,8 @@ const menuList = [
             {
                 title: '套餐详情',
                 key: '/taocan/taocanInfo',
-                hideIcon:true,
-                hidePadding:true
+                hideIcon: true,
+                hidePadding: true
             },
             {
                 title: '购物车',
@@ -29,12 +33,22 @@ const menuList = [
             {
                 title: '提交订单',
                 key: '/taocan/confirm_order',
-                hideIcon:true,
-                hidePadding:true,
-                themeColor:_light
+                hideIcon: true,
+                hidePadding: true,
+                themeColor: _light
             },
         ]
-    },/*
+    },
+    {
+        title:'在线预约',
+        key: "/order"
+    },
+
+    {
+        title:'公司简介',
+        key: "/about"
+    }
+    /*
     {
         title: '表单',
         key: '/form',
