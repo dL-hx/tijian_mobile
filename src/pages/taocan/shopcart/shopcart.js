@@ -90,7 +90,7 @@ class ShopCart extends Component {
 
 
     handleClick = () => {
-        console.log('===', this.state.ids)
+        // console.log('套餐的id[]', this.state.ids)
     }
 
 
@@ -117,11 +117,10 @@ class ShopCart extends Component {
                 </List>
 
 
-                <div className="fixed-bottom" style={{height: 90}}>
+                <div className="fixed-bottom" style={{height: 100}}>
                     <div className={'row' + ' ' + 'btm-title'}>
                         <div className='row'>
-                            <CheckboxItem onChange={this.onCheckAllBox} checked={checkAll}>
-                            </CheckboxItem>
+                            <CheckboxItem onChange={this.onCheckAllBox} checked={checkAll}></CheckboxItem>
                             全选
                         </div>
 
@@ -131,8 +130,8 @@ class ShopCart extends Component {
                             <span className='yuan'>{yuan} { totalPrice }</span>
                         </div>
                     </div>
-                    <Link to='/taocan/shopcart'>
-                        <Button type="primary" type='warning' style={{width: '100%', borderRadius: 0}} onClick={this.handleClick}>立即购买</Button>
+                    <Link to='/taocan/confirm_order'>
+                        <Button type="primary" type='warning' style={{width: '100%', borderRadius: 0}} onClick={this.handleClick}>提交订单</Button>
                     </Link>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {NavBar, Icon} from 'antd-mobile';
 import './App.less';
-import { withRouter } from 'react-router';
+import {withRouter} from 'react-router';
 import defaultSetting from './defaultSetting'
 import MenuConfig from "./config/menuConfig";
 
@@ -20,18 +20,21 @@ class App extends Component {
         });
         const menuName = obj;
 
-        let config ={}
+        let config = {}
         for (let i = 0; i < menuName.length; i++) {
             const item = menuName[i]
             if (currentKey === item.key) {
                 config.title = item.title
                 config.hidePadding = item.hidePadding
+                config.themeColor = item.themeColor
             }
         }
 
         return {
-            title:config.title,
-            hidePadding:config.hidePadding,
+            title: config.title,
+            hidePadding: config.hidePadding,
+
+            themeColor: config.themeColor,
         }
     };
 
@@ -39,19 +42,21 @@ class App extends Component {
         const flag = this.props.location.pathname === "/home" ? false : true;
 
         const config = this.handleMenUpdate(MenuConfig)
-        const hidePadding = false||config.hidePadding // default don't hidePadding
+        const hidePadding = false || config.hidePadding // default don't hidePadding
+        const themeColor = config.themeColor || 'white' // hex string or rgb string , default white background
 
         return (
-            <div className="container">
+            <div className="container" style={ {backgroundColor: themeColor}}>
                 <NavBar mode="light"
                         icon={flag && <Icon type="left"/>}
                         onLeftClick={() => this.props.history.goBack()}
                     // rightContent={<b onClick={() => this.setState({ open: true })}>...</b>}
                 >
-                    {defaultSetting.title}
+                    {/*{defaultSetting.title}*/}
+                    {config.title}
                 </NavBar>
 
-                <div className='main' style={{padding:`${hidePadding?0:'20px'}`}}>
+                <div className='main' style={{padding: `${hidePadding ? 0 : '20px'}`}}>
                     {this.props.children}
                 </div>
             </div>

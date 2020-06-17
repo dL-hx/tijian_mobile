@@ -1,3 +1,7 @@
+import defaultSetting from '../defaultSetting'
+
+const _light = defaultSetting.backgroundColor
+
 // src/config/menuConfig.js
 const menuList = [
     {
@@ -21,6 +25,13 @@ const menuList = [
             {
                 title: '购物车',
                 key: '/taocan/shopcart',
+            },
+            {
+                title: '提交订单',
+                key: '/taocan/confirm_order',
+                hideIcon:true,
+                hidePadding:true,
+                themeColor:_light
             },
         ]
     },/*

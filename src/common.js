@@ -40,8 +40,9 @@ class Common extends Component {
     render() {
         const config = this.handleMenUpdate(MenuConfig)
         const hideIcon = false||config.hideIcon // default don't hideIcon
+
         return (
-            <div className={styles.container}>
+            <div className={styles.container} >
                 {
                     hideIcon?"":<Link to='/home' style={{color:'#000'}}>
                         <LogoTitle title={config.title}></LogoTitle>

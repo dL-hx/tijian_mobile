@@ -12,7 +12,7 @@ class TaoCanInfo extends Component {
 
     render() {
         return (
-            <div style={{position: 'relative', height: '100%'}}>
+            <div className='relative'>
                 <div className={styles.lunbo}>
                     <img src={require('../../images/8.jpg')} alt=""/>
                 </div>
@@ -80,7 +80,7 @@ class TaoCanInfo extends Component {
                         }}>加入购物车</Button>
                     </Link>
 
-                    <Link to='/taocan/shopcart'>
+                    <Link to='/taocan/confirm_order'>
                         <Button type="primary" type='warning' style={{width: '50%', borderRadius: 0}}>立即购买</Button>
                     </Link>
                 </div>

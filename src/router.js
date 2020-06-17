@@ -12,6 +12,7 @@ import Special from "./pages/taocan/special";
 import Common from "./common";
 import TaoCanInfo from "./pages/taocan/taocanInfo";
 import ShopCart from "./pages/taocan/shopcart/shopcart";
+import ConfirmOrder from "./pages/taocan/confirmOrder/confirmOrder";
 
 export default class IRouter extends React.Component {
     render() {
@@ -26,6 +27,7 @@ export default class IRouter extends React.Component {
                                     <Route path="/taocan/special" component={Special}/>
                                     <Route path="/taocan/taocanInfo" component={TaoCanInfo}/>
                                     <Route path="/taocan/shopcart" component={ShopCart}/>
+                                    <Route path="/taocan/confirm_order" component={ConfirmOrder}/>
                                 </div>;
                             }}
                             />
