@@ -6,10 +6,18 @@ const Item = List.Item;
 class Special extends Component {
     state = {
         list: [
-            {title: '公司简介',pathname:"/about" },
-            {title: '选择套餐' ,pathname:"/home"},
-            {title: '套餐列表',pathname:"/taocan/special" },
-            {title: '在线预约',pathname:"/order" },
+            {title: '公司简介', key: "/about"},
+            {title: '选择套餐', key: "/home"},
+            {title: '套餐列表', key: "/taocan/special"},
+            {title: '在线预约', key: "/order"},
+            {title: '营业时间', key: "/biz_hour"},
+            {title: '体检须知', key: "/note"},
+            {title: '分院地址', key: "/cmp_addr"},
+            {title: '我的报告',key: '/my/my_report'},
+            {title: '报告解读',key: '/report_explain'},
+            {title: '我的预约', key: '/my/my_appoint'},
+            {title: '我的订单', key: '/my/my_order'},
+            {title: '我的信息', key: '/my/my_info'},
         ]
     }
 
@@ -20,12 +28,22 @@ class Special extends Component {
                 <List>
                     {
                         this.state.list.map((item, key) => (
-                            <Item key={key} arrow="horizontal" onClick={() => {
-                                this.props.history.push({ pathname: item.pathname, state: { item:{} } });
+                            <Item key={item.key} arrow="horizontal" onClick={() => {
+                                this.props.history.push({pathname: item.key, state: {item: {}}});
                             }}>{item.title}</Item>
                         ))
                     }
                 </List>
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
             </div>
         );
     }

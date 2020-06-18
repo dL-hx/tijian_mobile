@@ -1,0 +1,51 @@
+@import "../../../style/color.less";
+.my_report_detail{
+  h4{
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .nav{
+    text-align: center;
+
+  }
+  .nav-title{
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    line-height: 50px;
+
+  }
+
+  .main{
+    //border: 1px solid #ccc;
+    //
+    .main-title{
+      margin-top: 30px;
+      //border: 1px solid #ccc;
+    }
+
+    .fz-16 {
+      font-size: 16px;
+    }
+
+
+    .parent{
+      color:#6d6d72;
+      display:flex;/*设为伸缩容器*/
+      flex-flow:row;/*伸缩项目单行排列*/
+      align-items: center;
+      border-top:0.5px solid #c8c7cc;
+    }
+    .stable{
+      width:88px;/*固定宽度*/
+      padding:10px 15px;
+    }
+    .change{
+      flex:1;/*这里设置为占比1，填充满剩余空间*/
+      //border:1px solid #ff4400;
+      text-align: right;
+    }
+
+  }
+
+}

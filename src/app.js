@@ -56,7 +56,7 @@ class App extends Component {
                     {config.title}
                 </NavBar>
 
-                <div className='main' style={{padding: `${hidePadding ? 0 : '20px'}`}}>
+                <div className='main' style={{padding: `${hidePadding ? 0 : '20px'}`, backgroundColor: themeColor}}>
                     {this.props.children}
                 </div>
             </div>

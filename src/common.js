@@ -27,12 +27,14 @@ class Common extends Component {
             if (currentKey === item.key) {
                 config.title = item.title
                 config.hideIcon = item.hideIcon
+                config.top=item.top
             }
         }
 
         return {
             title:config.title,
             hideIcon:config.hideIcon,
+            top:config.top,
         }
     };
 
@@ -40,15 +42,16 @@ class Common extends Component {
     render() {
         const config = this.handleMenUpdate(MenuConfig)
         const hideIcon = false||config.hideIcon // default don't hideIcon
+        const top = config.top || '24px'// default top 24px
 
         return (
-            <div className={styles.container} >
+            <div className={styles.common} >
                 {
                     hideIcon?"":<Link to='/home' style={{color:'#000'}}>
                         <LogoTitle title={config.title}></LogoTitle>
                     </Link>
                 }
-                <div>
+                <div  style={{marginTop: `${top}`}}>
                     {this.props.children}
                 </div>
             </div>

@@ -42,6 +42,8 @@ class Order extends Component {
 
                 console.log(values)
 
+                Toast.success('预约成功',1);
+
             }else {
                 Toast.fail('输入有误，请检查输入无误后再提交');
             }
@@ -120,7 +122,7 @@ class Order extends Component {
 
                         <TextareaItem
                             title="预约提醒"
-                            placeholder='请输入预约内容...'
+                            placeholder='请输入预约提醒内容...'
                             {...getFieldProps('count', {
                                 initialValue: '',
                             })}

@@ -8,9 +8,9 @@ class LogoTitle extends Component {
     render() {
         const {showIcon, subtitle, title} = this.props
         return (
-            <div>
-                <h4 style={{paddingBottom: 10}}> {title}</h4>
-                <p className='logo-title'>
+            <div className='logo-title'>
+                <h4> {title}</h4>
+                <p className='logo-body'>
                     {showIcon&&<img src={defaultSetting.logo}/>}
                     {subtitle}
                 </p>
