@@ -26,7 +26,7 @@ class MyAppoint extends Component {
                                 </div>
                             </div>
                             <div className="mui-card-footer">
-                                <a id="icon"><span className="mui-icon mui-icon-phone"></span></a>
+                                <a id="icon" href={`tel:${item.tel}`}><span className="mui-icon mui-icon-phone"></span></a>
                                 <a id="icon"><span className="mui-icon mui-icon-map"></span></a>
                                 <div id='btn' className="mui-btn-primary mui-btn-outlined">
                                     {item.taocan}

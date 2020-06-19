@@ -13,7 +13,7 @@ class CmpAddr extends Component {
                         </div>
                     </div>
                     <div className="mui-card-footer">
-                        <a id="icon"><span className="mui-icon mui-icon-phone"></span></a>
+                        <a id="icon" href="tel:029-88888888"><span className="mui-icon mui-icon-phone"></span></a>
 
                         <a id="icon"><span className="mui-icon mui-icon-map"></span></a>
                     </div>
@@ -28,7 +28,7 @@ class CmpAddr extends Component {
                         </div>
                     </div>
                     <div className="mui-card-footer">
-                        <a id="icon"><span className="mui-icon mui-icon-phone"></span></a>
+                        <a id="icon" href="tel:029-88888888"><span className="mui-icon mui-icon-phone"></span></a>
 
                         <a id="icon"><span className="mui-icon mui-icon-map"></span></a>
                     </div>
