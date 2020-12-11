@@ -1,0 +1,79 @@
+@import "../../../style/color.less";
+
+.my_report_detail {
+  margin-left: -20px;
+  margin-right: -20px;
+  text-align: justify;
+  line-height: 2;
+  .mui-card-footer{
+    padding-left: 0px; padding-right: 0px;
+    span{color: rgba(0, 0, 0, .85);}
+  }
+  .nav {
+    text-align: center;
+    h5{font-size: 13px; color: rgba(0, 0, 0, .45);}
+    h4 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+  }
+
+  .nav-title {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    span{padding-left: 10px;}
+  }
+
+  .main {
+    h4{padding: 15px 20px;}
+    .main-title {
+      //border: 1px solid #ccc;
+      padding: 0 20px;
+      h4{
+        font-size: 15px;
+        border-bottom: 1px solid #f5f5f5;
+        font-weight: normal;
+        padding: 10px 0px;
+        font-weight: bold;
+      }
+      h4.yisheng{border-top: 1px solid #f5f5f5;border-bottom:0}
+      p{color: rgba(0, 0, 0, .85);}
+    }
+
+    .fz-16 {
+      font-size: 16px;
+    }
+
+
+    .parent {
+      color: #6d6d72;
+      display: flex; /*设为伸缩容器*/
+      flex-flow: row; /*伸缩项目单行排列*/
+      align-items: center;
+      //border-top: 0.5px solid #c8c7cc;
+    }
+
+    .stable {
+      width: 88px; /*固定宽度*/
+      padding: 10px 15px;
+    }
+
+    .change {
+      flex: 1; /*这里设置为占比1，填充满剩余空间*/
+      //border:1px solid #ff4400;
+      text-align: right;
+    }
+
+  }
+
+  .am-accordion .am-accordion-item .am-accordion-header {
+    padding-left: 0px;
+  }
+
+  .mui-card-footer:before, .mui-card-header:after {
+    height: 0px;
+  }
+  .am-accordion .am-accordion-item .am-accordion-header{padding-left: 20px!important;font-size: 15px;}
+}

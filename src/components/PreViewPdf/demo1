@@ -1,0 +1,34 @@
+import React, {Component} from 'react';
+
+import {MobilePDFReader} from 'react-read-pdf';
+
+class PreViewPdf extends Component {
+    state = {
+        page: 1,
+        pages: 1
+    }
+
+    onDocumentComplete(page, title, otherObj) {
+        this.setState({page: page});
+    }
+
+    render() {
+        // let {PDFUrl}= this.props
+
+        let PDFUrl = 'http://phy.wiimedia.top/pdf/export'
+        console.log('http://phy.wiimedia.top/pdf/export', PDFUrl)
+
+        return (
+            <div style={{overflow: 'scroll', height: '600px'}}>
+                <MobilePDFReader
+                    isShowFooter={false}
+                    isShowHeader={false}
+                    url={'http://phy.wiimedia.top/pdf/export'}
+                    onDocumentComplete={this.onDocumentComplete.bind(this)}
+                    page={this.state.page}/>
+            </div>
+        );
+    }
+}
+
+export default PreViewPdf;

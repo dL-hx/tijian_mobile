@@ -1,0 +1,27 @@
+@import "../../../style/color.less";
+@import "../../../style/card.less";
+
+.my_report{
+  .mui-card-header{
+    span:last-child{
+      color: @colorG;
+      font-size: 13px;
+    }
+    span:first-child{
+      font-size: 15px;
+    }
+  }
+
+  .mui-card-footer{
+    justify-content: flex-start;
+  }
+
+
+
+
+  .mui-card{box-shadow: none;border: 1px solid #f1f1f1;border-radius: 6px;}
+  .mui-card-footer:before, .mui-card-header:after{background-color: #f1f1f1;}
+  .my_report .mui-card-footer{margin: 0 12px;}
+
+
+}

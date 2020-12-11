@@ -1,0 +1,42 @@
+{
+  "name": "create-react-app",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "antd-mobile": "^2.3.1",
+    "axios": "^0.19.2",
+    "css3transform": "^1.2.3",
+    "lodash": "^4.17.19",
+    "moment": "^2.26.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-iframe-comm": "^1.2.2",
+    "react-pdf": "^2.0.0-beta",
+    "react-pdf-js": "^4.0.1",
+    "react-read-pdf": "^2.0.9",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "1.0.13",
+    "weixin-js-sdk": "^1.6.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "alloyfinger": "^0.1.16",
+    "antd-mobile-demo-data": "^0.3.0",
+    "babel-plugin-import": "^1.2.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "pdfjs-dist": "^2.4.456",
+    "prop-types": "^15.7.2",
+    "qs": "^6.9.4",
+    "rc-form": "^2.4.11",
+    "react-app-rewired": "^1.2.9",
+    "react-redux": "^5.0.6",
+    "react-router": "^5.2.0",
+    "redux": "^4.0.5"
+  }
+}

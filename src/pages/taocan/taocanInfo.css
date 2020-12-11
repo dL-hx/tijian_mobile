@@ -1,0 +1,70 @@
+
+.lunbo img {
+    width: 100%;
+    height: auto;
+}
+.info .navtitle {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 1px solid #ccc; */
+}
+
+/*折扣样式*/
+.info s1 {
+    font-size: 18px;
+}
+.info .price2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.info .price2 a{color: rgba(0, 0, 0, 0.45);}
+.info .price2 a>div{
+    display: flex;
+    flex-direction: column;
+}
+.info .subtitle {
+    display: flex;
+    align-items: baseline;
+    color: #666;
+}
+
+.info .subtitle h3 {
+    color: #009999;
+    margin: 0;
+}
+.info .subtitle h6{margin: 0;}
+.info h5 {
+    margin: 0 5px;
+    text-decoration: line-through;
+}
+.info .thd-l {
+    width: 80%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.info .thd-r a {
+    color: #666;
+}
+.info .fthtitle {
+    height: 60px;
+    padding: 12px;
+
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+
+}
+.info .fthtitle span:nth-child(1) {
+    width: 80px;
+    color: #666;
+}
+.info .fthtitle span:nth-child(2) {
+    margin-right: 20px;
+}
+.am-button::before{border: 0px;}
+
