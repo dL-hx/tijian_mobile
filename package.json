@@ -6,7 +6,7 @@
     "antd-mobile": "^2.3.1",
     "axios": "^0.19.2",
     "css3transform": "^1.2.3",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "moment": "^2.26.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
