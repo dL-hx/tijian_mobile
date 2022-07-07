@@ -7,7 +7,7 @@
     "axios": "^0.19.2",
     "css3transform": "^1.2.3",
     "lodash": "^4.17.19",
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-iframe-comm": "^1.2.2",
